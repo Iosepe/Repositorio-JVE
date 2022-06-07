@@ -4,5 +4,5 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 
 | Comando | ¿Qué hace? | Imagen |
 | :---: | :---: | ------------- |
-| `sudo reboot`  | Reinicia el sistema operativo  | ![—Pngtree—restart icon isolated on background_5150127(1)](https://user-images.githubusercontent.com/106647506/172273174-0808d373-c730-4871-8e71-6ffceac31daf.png)|
+| `sudo reboot`  | Reinicia el sistema operativo  | ![Webp net-resizeimage(21)](https://user-images.githubusercontent.com/106647506/172273313-c52833a6-79f5-49a8-8823-f84d7a87b35c.png) |
 | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  |
