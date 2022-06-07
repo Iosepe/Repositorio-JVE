@@ -1,11 +1,11 @@
 # Curso de Sistemas Operativos
 
--**Jhoseph Andrey Villalta Elizondo**  
+**Jhoseph Andrey Villalta Elizondo**  
 
--**Universidad Latinoamericana de Ciencia y Tecnología**  
+**Universidad Latinoamericana de Ciencia y Tecnología**  
 
--**ULACIT**  
+***ULACIT***  
 
--**2022**  
+***2022***    
 
  
