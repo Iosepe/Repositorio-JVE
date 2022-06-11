@@ -4,11 +4,11 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 
 | Comando | ¿Qué hace? | Notas |
 | :---: | :---: | :---: |
-| `|`  | Este símbolo llamado pipe sirve para concatenar dos comandos  | Por si solo no es un comando |
+| `Pipe`  | Este símbolo llamado pipe sirve para concatenar dos comandos  | Por si solo no es un comando, este símbolo no se puede usar en GitHub |
 | `-l`  | Cambia la forma en que se imprimen ciertos comandos a ser una lista  | Por si solo no es un comando |
 | `sudo`  | Este comando nos servirá para correr cualquier comando que necesite permisos de administrador como si lo fueramos  | Ej: `sudo reboot` |
 | `reboot`  | Reinicia el sistema operativo  | |
-| `ps -aux`  | Muestra los procesos del usuario en cuestión  | `| grep (proceso a buscar)` agregado al comando busca el proceso en cuestión  |
+| `ps -aux`  | Muestra los procesos del usuario en cuestión  | `Pipe grep (proceso a buscar)` agregado al comando busca el proceso en cuestión  |
 | `ps -e`  | Muestra los procesos del sistema operativo en su totalidad  |   |
 | `man (cualquier comando)`  | Muestra el manual del comando especificado  |   |
 | `top`  | Muestra los procesos como si se tratara del task manager  |   |
@@ -31,7 +31,7 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `cd` -> `nano` | Para ver archivos de texto y editarlos  | Esto es un Notepad en la terminal, para seleccionar una opción ver el menú de abajo y seleccionar una letra de este modo: Ctrl+Letra |
 | `cat (nombre del archivo)` | Para SOLO ver el contenido de un archivo de texto  | |
 | `sl`  | Un pequeño trolleo por si escribes mal ls  | |
-| `cowsay`  | Hace que una vaca diga lo que se le escriba | Incluso se puede concatenar con | y hacer que muestre comandos enteros |
+| `cowsay`  | Hace que una vaca diga lo que se le escriba | Incluso se puede concatenar con Pipe y hacer que muestre comandos enteros |
 | `telnet towel.blinkenlights.nl `  | Muestra el episodio 4 de Star Wars completo  | Prepara las palomitas |
 | `history`  | Muestra el historial de comandos  | |
 | `> (nombre de un archivo de texto)`  | Esto guarda los resultados de un comando en un archivo de texto  | Por si solo no es un comando |
