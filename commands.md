@@ -42,4 +42,5 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `rm (archivo a borrar)` | Para borrar archivos  | Agregar -R al final si se trata de un directorio, se puede agregar una f al lado para forzar su eliminación | `rm Test.txt` borrará el archivo "Test.txt" si está en el mismo directorio |
 | `dpkg -i (instalador.deb) `  | Para instalar un programa descargado por fuera de los repositorios y la tienda de aplicaciones | |  Lo descrito en su descripción |
 | `alias (alias del comando)="(comando a usar)" `  | Para añadirle un alias a un comando  | Cuando hagamos esto podremos usar solo el alias para correr el comando | `alias restart="sudo reboot" ` nos permitirá añadir el alias "restart" al comando "reboot" y así usarlo sin tener que escribirlo como normalmente se haría |
+| `Ip addr ` | Para verificar la Ip de la sesión actual | Esta cambia cada sesión, por lo que en aplicaciones como "Termius" debemos cambiarla periodicamente |  Al ingresar `Ip addr` se mostrará una lista de direcciones, la más importante será la llamada "inet" |
 
