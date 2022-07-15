@@ -28,7 +28,7 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `exit`  | El equivalente a cerrar sesión en la terminal  | Debemos hacer esto cada vez que usamos otro usuario si queremos volver al original | Lo descrito en su descripción |
 | `clear`  | Limpia la terminal | | Lo descrito en su descripción |
 | `nano` | Para ver archivos de texto y editarlos  | Esto es un Notepad en la terminal, para seleccionar una opción, ver el menú de abajo y seleccionar una letra de este modo: Ctrl+Letra | Tenemos un archivo de texto llamado "Test.txt" en el directorio actual, con `nano Test.txt` podemos abrirlo y editarlo |
-| `cat (nombre del archivo)` | Para SOLO ver el contenido de un archivo de texto  | `cat Test.txt` nos muestra el contenido del archivo "Test.txt" si se encuentra en el mismo directorio |
+| `cat (nombre del archivo)` | Para SOLO ver el contenido de un archivo de texto  | | `cat Test.txt` nos muestra el contenido del archivo "Test.txt" si se encuentra en el mismo directorio |
 | `sl`  | Un pequeño trolleo por si escribes mal ls  | | Lo descrito en su descripción |
 | `cowsay`  | Hace que una vaca diga lo que se le escriba | Incluso se puede concatenar con pipe y hacer que muestre comandos enteros | `ps -aux (pipe) cowsay` muestra la lista de procesos en una vaca |
 | `telnet towel.blinkenlights.nl `  | Muestra el episodio 4 de Star Wars completo  | Prepara las palomitas | Lo descrito en su descripción |
@@ -36,7 +36,7 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `> (nombre de un archivo de texto)`  | Esto guarda los resultados de un comando en un archivo de texto  | Por si solo no es un comando | `history > Test.txt` guardará el historial de comandos en el archivo "Test.txt" |
 | `head -n (n de líneas a ver) (archivo a ver)`  | Este comando sirve para ver las primeras líneas de un archivo de texto sin abrirlo del todo  | | `head -n 2 Test.txt` mostrará las primeras dos líneas de texto del archivo "Test.txt" |
 | `tail -n (n de líneas a ver) (archivo a ver)`  | Este comando sirve para ver las últimas líneas de un archivo de texto sin abrirlo del todo  | | `head -n 2 Test.txt` mostrará las últimas dos líneas de texto del archivo "Test.txt" |
-| `more` | Concatenado con algún archivo nos permite verlo poco a poco  | Por si solo no es un comando, para salir de esta vista se presiona "q" | `cat Test.txt | more` nos permitirá ver el archivo "Text.txt" poco a poco |
+| `more` | Concatenado con algún archivo nos permite verlo poco a poco  | Por si solo no es un comando, para salir de esta vista se presiona "q" | `cat Test.txt (pipe) more` nos permitirá ver el archivo "Text.txt" poco a poco |
 | `cp (archivo a copiar) (donde queremos copiarlo)`  | Para copiar un archivo a otra carpeta | | `cp Test.txt Escritorio/` copiará el archivo Test.txt al escritorio |
 | `mv (archivo a copiar) (donde queremos copiarlo)`  | Para mover un archivo a otra carpeta  | Si existe un archivo igual en la carpeta destino lo sobrescribirá | `mv Test.txt Escritorio/` moverá el archivo Test.txt al escritorio |
 | `rm (archivo a borrar)` | Para borrar archivos  | Agregar -R al final si se trata de un directorio, se puede agregar una f al lado para forzar su eliminación | `rm Test.txt` borrará el archivo "Test.txt" si está en el mismo directorio |
