@@ -3,7 +3,7 @@
 En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativos, existirán comandos de toda índole
 
 | Comando | ¿Qué hace? | Notas | Ejemplo |
-| :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: |
 | `Pipe`  | Este símbolo llamado pipe sirve para concatenar dos comandos  | Por si solo no es un comando, este símbolo no se puede usar en GitHub ||
 | `-l`  | Cambia la forma en que se imprimen ciertos comandos a ser una lista  | Por si solo no es un comando ||
 | `sudo`  | Este comando nos servirá para correr cualquier comando que necesite permisos de administrador como si lo fueramos  | Ej: `sudo reboot` ||
