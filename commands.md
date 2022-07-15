@@ -49,10 +49,9 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `file (archivo) ` | Muestra el formato de un archivo |  |  `file Test.txt` nos mostrará el formato del archivo "Test.txt" |
 | `chown (usuario a darle el archivo) (archivo)` | Para cambiar el dueño de un archivo |  |  `chown Usr2 Test.txt` hará que Usr2 sea el dueño del archivo "Test.txt" |
 | `df -h ` | Muestra el espacio utilizado en disco, todos los discos duros |  | Lo descrito en su descripción |
-| `for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less` | Nos dice cuanta memoria virtual gasta cada proceso en específico |  | Lo descrito en su descripción |
+| `for file in /proc/*/status ; do awk '/VmSwap(pipe)Name/{printf $2 " " $3}END{ print ""}' $file; done (pipe) sort -k 2 -n -r (pipe) less` | Nos dice cuanta memoria virtual gasta cada proceso en específico |  | Lo descrito en su descripción |
 | `free -h ` | Muestra la memoria total, usada, libre, y además el tamaño del swap |  | Lo descrito en su descripción |
 | `swapon` | Para activar el swap | `swapoff` desactiva el swap  | Lo descrito en su descripción |
 | `cat /proc/sys/vm/swappiness` | Nos dice cuanto usa el sistema operativo de memoria swap, con cuanta frecuencia mueve programas al swap | Va de 0 a 100, si tenemos un 0 no pasa ningún archivo al swap, y si tenemos un 100 prácticamente pasa todo de memoria a swap. Esto se puede cambiar con el siguiente comando | Lo descrito en su descripción |
 | `sudo sysctl vm.swappiness=(valor de swappines)` | Nos permite cambiar el valor del swappines |  | `sudo sysctl vm.swappiness=60` cambiará el valor de swappines a 60 |
-| `sudo mkdir /mnt/ram_disk `
-` sudo mount -t tmpfs -o size=1024m new_ram_disk /mnt/ram_disk` | Nos permite montar un RAM Disk, lo que hace es crear un disco duro como memoria RAM | Con df -h podemos ver si se creó correctamente  | Lo descrito en su descripción |
+| `sudo mkdir /mnt/ram_disk ` `sudo mount -t tmpfs -o size=1024m new_ram_disk /mnt/ram_disk` | Nos permite montar un RAM Disk, lo que hace es crear un disco duro como memoria RAM | Con df -h podemos ver si se creó correctamente  | Lo descrito en su descripción |
