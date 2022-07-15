@@ -4,15 +4,15 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 
 | Comando | ¿Qué hace? | Notas | Ejemplo |
 | :---: | :---: | :---: | :---: |
-| `Pipe`  | Este símbolo llamado pipe sirve para concatenar dos comandos  | Por si solo no es un comando, este símbolo no se puede usar en GitHub ||
-| `-l`  | Cambia la forma en que se imprimen ciertos comandos a ser una lista  | Por si solo no es un comando ||
-| `sudo`  | Este comando nos servirá para correr cualquier comando que necesite permisos de administrador como si lo fueramos  | Ej: `sudo reboot` ||
-| `reboot`  | Reinicia el sistema operativo  | ||
-| `ps -aux`  | Muestra los procesos del usuario en cuestión  | `Pipe grep (proceso a buscar)` agregado al comando busca el proceso en cuestión  ||
-| `ps -e`  | Muestra los procesos del sistema operativo en su totalidad  |   ||
-| `man (cualquier comando)`  | Muestra el manual del comando especificado  |   ||
-| `top`  | Muestra los procesos como si se tratara del task manager  |   ||
-| `htop`  | Lo mismo que `top` pero de una manera más gráfica  | |
+| `Pipe`  | Este símbolo llamado pipe sirve para concatenar dos comandos  | Por si solo no es un comando, este símbolo no se puede usar en GitHub | `ps -aux (pipe) grep "firefox"` busca en la lista de procesos alguno llamado Firefox|
+| `-l`  | Cambia la forma en que se imprimen ciertos comandos a ser una lista  | Por si solo no es un comando | `ls -l` muestra los directorios en forma de lista|
+| `sudo`  | Este comando nos servirá para correr cualquier comando que necesite permisos de administrador como si lo fueramos  | | `sudo reboot` reinicia el sistema|
+| `reboot`  | Reinicia el sistema operativo  | | El mismo ejemplo del comando anterior |
+| `ps -aux`  | Muestra los procesos del usuario en cuestión  | `Pipe grep (proceso a buscar)` agregado al comando busca el proceso en cuestión  | Lo descrito en su descripción |
+| `ps -e`  | Muestra los procesos del sistema operativo en su totalidad  |   | Lo descrito en su descripción |
+| `man (cualquier comando)`  | Muestra el manual del comando especificado  |   | `man ps` muestra el manual de comandos de procesos |
+| `top`  | Muestra los procesos como si se tratara del task manager  |   | Lo descrito en su descripción |
+| `htop`  | Lo mismo que `top` pero de una manera más gráfica  | | Lo descrito en su descripción |
 | `pstree`  | Muestra el árbol de procesos, es decir, la jerarquía  |  ||
 | `kill -9 (process id)`  | "Mata" un proceso, las ID de estos pueden verificarse con `ps -aux`  |  ||
 | `htop`  | Lo mismo que `top` pero de una manera más gráfica  | ||
