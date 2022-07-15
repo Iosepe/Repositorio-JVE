@@ -35,7 +35,7 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `history`  | Muestra el historial de comandos  | | Lo descrito en su descripción |
 | `> (nombre de un archivo de texto)`  | Esto guarda los resultados de un comando en un archivo de texto  | Por si solo no es un comando | `history > Test.txt` guardará el historial de comandos en el archivo "Test.txt" |
 | `head -n (n de líneas a ver) (archivo a ver)`  | Este comando sirve para ver las primeras líneas de un archivo de texto sin abrirlo del todo  | | `head -n 2 Test.txt` mostrará las primeras dos líneas de texto del archivo "Test.txt" |
-| `tail -n (n de líneas a ver) (archivo a ver)`  | Este comando sirve para ver las últimas líneas de un archivo de texto sin abrirlo del todo  | | `head -n 2 Test.txt` mostrará las últimas dos líneas de texto del archivo "Test.txt" |
+| `tail -n (n de líneas a ver) (archivo a ver)`  | Este comando sirve para ver las últimas líneas de un archivo de texto sin abrirlo del todo  | | `tail -n 2 Test.txt` mostrará las últimas dos líneas de texto del archivo "Test.txt" |
 | `more` | Concatenado con algún archivo nos permite verlo poco a poco  | Por si solo no es un comando, para salir de esta vista se presiona "q" | `cat Test.txt (pipe) more` nos permitirá ver el archivo "Text.txt" poco a poco |
 | `cp (archivo a copiar) (donde queremos copiarlo)`  | Para copiar un archivo a otra carpeta | | `cp Test.txt Escritorio/` copiará el archivo Test.txt al escritorio |
 | `mv (archivo a copiar) (donde queremos copiarlo)`  | Para mover un archivo a otra carpeta  | Si existe un archivo igual en la carpeta destino lo sobrescribirá | `mv Test.txt Escritorio/` moverá el archivo Test.txt al escritorio |
