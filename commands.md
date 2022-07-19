@@ -55,3 +55,6 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `cat /proc/sys/vm/swappiness` | Nos dice cuanto usa el sistema operativo de memoria swap, con cuanta frecuencia mueve programas al swap | Va de 0 a 100, si tenemos un 0 no pasa ningún archivo al swap, y si tenemos un 100 prácticamente pasa todo de memoria a swap. Esto se puede cambiar con el siguiente comando | Lo descrito en su descripción |
 | `sudo sysctl vm.swappiness=(valor de swappines)` | Nos permite cambiar el valor del swappines |  | `sudo sysctl vm.swappiness=60` cambiará el valor de swappines a 60 |
 | `sudo mkdir /mnt/ram_disk ` -> `sudo mount -t tmpfs -o size=1024m new_ram_disk /mnt/ram_disk` | Nos permite montar un RAM Disk, lo que hace es crear un disco duro como memoria RAM | Con `df -h` podemos ver si se creó correctamente  | Lo descrito en su descripción |
+| `mount` | Para montar dispositivos en el sistema de archivos |   | El ejemplo de arriba muestra una parte |
+| `Gparted` | Para administrar particiones |   | `sudo apt install gparted` para instalarlo |
+| `gnome-disk-utility` | Muestra información sobre el disco |   | `sudo apt install gnome-disk-utility` para instalarlo |
