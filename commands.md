@@ -83,11 +83,12 @@ Para cambiar el crontab (que definirá la configuración de ejecución en el tie
 Esto abrirá un archivo de texto donde deberemos ingresar la siguiente configuración:
 `m h dom mon dow command`<br />
 
-m: Minutos
-h: Hora
-dom: Día del mes
-mon: Mes
-dow: Día de la semana
+Donde:<br />
+m: Minutos<br />
+h: Hora<br />
+dom: Día del mes<br />
+mon: Mes<br />
+dow: Día de la semana<br />
 command: Comando o ruta del script a ejecutar
 
 
