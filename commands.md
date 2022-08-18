@@ -67,3 +67,5 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `ln (ruta o nombre del archivo original) (ruta o nombre del enlace duro)` | Sirve para crear un enlace duro de un archivo o ruta |  | `ln /home/Test /home/Test2` creará un enlace duro de Test en Test2 |
 | `ln -s (ruta o nombre del archivo original) (ruta o nombre del enlace duro)` | Sirve para crear un enlace suave de un archivo o ruta |  | `ln /home/Test /home/Test2` creará un enlace duro de Test en Test2 |
 | `unlink (ruta del enlace)` | Sirve para eliminar un enlace duro o suave |  | `unlink /home/Test2` eliminará el enlace creado en Test2 |
+
+# Scripts
