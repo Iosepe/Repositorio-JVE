@@ -65,3 +65,5 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `useradd (parámetros)` | Para crear un nuevo usuario con sus respectivos directorios y funciones, cosa que lo hace distinto de adduser |   | `sudo useradd -m Test -G wheel -p 123` creará el usuario "Test" en el grupo wheel con la contraseña 123 |
 | `touch (archivo)` | Para crear un archivo vacío |   | `sudo touch test` creará un archivo vacío llamado "test" en el directorio actual |
 | `ln (ruta o nombre del archivo original) (ruta o nombre del enlace duro)` | Sirve para crear un enlace duro de un archivo o ruta |  | `ln /home/Test /home/Test2` creará un enlace duro de Test en Test2 |
+| `ln -s (ruta o nombre del archivo original) (ruta o nombre del enlace duro)` | Sirve para crear un enlace suave de un archivo o ruta |  | `ln /home/Test /home/Test2` creará un enlace duro de Test en Test2 |
+| `unlink (ruta del enlace)` | Sirve para eliminar un enlace duro o suave |  | `unlink /home/Test2` eliminará el enlace creado en Test2 |
