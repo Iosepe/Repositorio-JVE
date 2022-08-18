@@ -75,15 +75,15 @@ Para crear scripts primeramente deberemos crear un archivo con la extensión `.s
 `#!/bin/bash`<br />
 Luego de esto podremos ir agregando comandos por línea, y estos se ejecutarán en ese orden.<br />
 
-Para ejecutar un script, deberemos usar el siguiente comando:
+Para ejecutar un script, deberemos usar el siguiente comando:<br />
 `cat (archivo del script)`<br />
 
-Para cambiar el crontab (que definirá la configuración de ejecución en el tiempo del script), deberemos ejecutar el siguiente comando:
+Para cambiar el crontab (que definirá la configuración de ejecución en el tiempo del script), deberemos ejecutar el siguiente comando:<br />
 `crontab -e`<br />
-Esto abrirá un archivo de texto donde deberemos ingresar la siguiente configuración:
+Esto abrirá un archivo de texto donde deberemos ingresar la siguiente configuración:<br />
 `m h dom mon dow command`<br />
 
-Donde:<br />
+##Donde:<br />
 m: Minutos<br />
 h: Hora<br />
 dom: Día del mes<br />
@@ -93,6 +93,6 @@ command: Comando o ruta del script a ejecutar
 
 En caso de no requerir algún parámetro se puede dejar con un asterisco<br />
 
-Ejemplo de crontab:
+##Ejemplo de crontab:<br />
 `00 19 * * * root echo Hola Mundo`<br />
 Esto ejecutará como root el comando echo todos los días a las 7 de la tarde
