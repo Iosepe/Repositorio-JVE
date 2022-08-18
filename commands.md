@@ -33,11 +33,11 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `cowsay`  | Hace que una vaca diga lo que se le escriba | Incluso se puede concatenar con pipe y hacer que muestre comandos enteros | `ps -aux (pipe) cowsay` muestra la lista de procesos en una vaca |
 | `telnet towel.blinkenlights.nl `  | Muestra el episodio 4 de Star Wars completo  | Prepara las palomitas | Lo descrito en su descripción |
 | `history`  | Muestra el historial de comandos  | | Lo descrito en su descripción |
-| `> (nombre de un archivo de texto)`  | Esto guarda los resultados de un comando en un archivo de texto  | Por si solo no es un comando | `history > Test.txt` guardará el historial de comandos en el archivo "Test.txt" |
+| `> (nombre de un archivo de texto)`  | Esto guarda los resultados de un comando en un archivo de texto, se llama redirección  | Por si solo no es un comando | `history > Test.txt` guardará el historial de comandos en el archivo "Test.txt" |
 | `head -n (n de líneas a ver) (archivo a ver)`  | Este comando sirve para ver las primeras líneas de un archivo de texto sin abrirlo del todo  | | `head -n 2 Test.txt` mostrará las primeras dos líneas de texto del archivo "Test.txt" |
 | `tail -n (n de líneas a ver) (archivo a ver)`  | Este comando sirve para ver las últimas líneas de un archivo de texto sin abrirlo del todo  | | `tail -n 2 Test.txt` mostrará las últimas dos líneas de texto del archivo "Test.txt" |
 | `more` | Concatenado con algún archivo nos permite verlo poco a poco  | Por si solo no es un comando, para salir de esta vista se presiona "q" | cat Test.txt &#124; more nos permitirá ver el archivo "Text.txt" poco a poco |
-| `cp (archivo a copiar) (donde queremos copiarlo)`  | Para copiar un archivo a otra carpeta | | `cp Test.txt Escritorio/` copiará el archivo Test.txt al escritorio |
+| `cp (archivo a copiar) (donde queremos copiarlo)`  | Para copiar un archivo a otra carpeta | | `cp -r /etc/[abcdef]* $HOME` copiará recursivamente todos los archivos con un nombre iniciado en a,b,c,d,e,f desde /etc hacia el directorio home |
 | `mv (archivo a copiar) (donde queremos copiarlo)`  | Para mover un archivo a otra carpeta  | Si existe un archivo igual en la carpeta destino lo sobrescribirá | `mv Test.txt Escritorio/` moverá el archivo Test.txt al escritorio |
 | `rm (archivo a borrar)` | Para borrar archivos  | Agregar -R al final si se trata de un directorio, se puede agregar una f al lado para forzar su eliminación | `rm Test.txt` borrará el archivo "Test.txt" si está en el mismo directorio |
 | `dpkg -i (instalador.deb) `  | Para instalar un programa descargado por fuera de los repositorios y la tienda de aplicaciones | | Lo descrito en su descripción |
@@ -63,3 +63,4 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `uname -a` | Para mostrar el kernel que utiliza el sistema operativo |   | Lo descrito en su descripción |
 | `useradd` | Para crear un nuevo usuario con sus respectivos directorios y funciones, cosa que lo hace distinto de adduser |   | `sudo useradd -m Test -G wheel -p 123` creará el usuario "Test" en el grupo wheel con la contraseña 123 |
 | `touch` | Para crear un archivo vacío |   | `sudo touch test` creará un archivo vacío llamado "test" en el directorio actual |
+| `swapon` | Para activar el swap | `swapoff` desactiva el swap  | Lo descrito en su descripción |
