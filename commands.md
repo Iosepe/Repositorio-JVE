@@ -104,7 +104,18 @@ Esto ejecutará como root el comando echo todos los días a las 7 de la tarde
 Para instalar Docker se deben seguir estos pasos a continuación:<br />
 
 Debemos ingresar primeramente este comando de instalación<br />
-`sudo apt-get install \` <br /> `ca-certificates \` <br /> `curl \` <br /> `gnupg \` <br /> `lsb-release`
+`sudo apt-get install \` <br /> `ca-certificates \` <br /> `curl \` <br /> `gnupg \` <br /> `lsb-release`<br />
+
+Después deberemos crear este directorio
+`sudo mkdir -p /etc/apt/keyrings`<br />
+
+Ahora usaremos el siguiente comando para transferir datos
+`curl -fsSL https://download.docker.com/linux/ubuntu/gpg` &#124; `sudo gpg --dearmor -o /etc/apt/keyrings/docker.pgp`<br />
+
+Usamos echo
+`echo \`
+`"deb [arch=$(dpkg) --pint-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \`<br />
+`$(lsb_release -cs) stable "` &#124; `sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
 
 En esta tabla se presentarán comandos útiles de Docker
 
