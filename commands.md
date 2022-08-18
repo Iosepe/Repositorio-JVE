@@ -118,18 +118,23 @@ Usamos echo:<br />
 `$(lsb_release -cs) stable "` &#124; `sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
 
 Y finalmente ejecutamos la instalación:<br />
-`sudo apt-get install ./docker-desktop-<version>-<arch>.deb`
+`sudo apt-get install ./docker-desktop-<version>-<arch>.deb`<br />
+
+No hay que olvidarse de iniciar el servicio:<br />
+`systemctl --user start docker-desktop`<br />
 
 En esta tabla se presentarán comandos útiles de Docker
 
 | Comando | ¿Qué hace? | Notas | Ejemplo |
 | :---: | :---: | :---: | :---: |
 | `docker pull (imagen)`  | Para descargar una imagen disponible en docker  | Si ponemos dos puntos después del nombre de la imagen, podremos escoger la versión que queremos descargar | `docker pull nginx` descarga la última imagen de nginx disponible |
-| `docker ps -a`  | Para ver los contenedores que tenemos disponibles  |  | Lo descrito en su descripción |
+| `docker ps -a`  | Para ver las imagenes que tenemos disponibles  |  | Lo descrito en su descripción |
+| `docker ps`  | Muestra las imagenes que se están ejecutando  |  | Lo descrito en su descripción |
 | `docker history (contenedor) `  | Para ver los cambios y capas de un contenedor |  | `docker history nginx` mostrará los cambios y capas de nginx  |
 | `docker info`  | Mostrará información de nuestro docker  | Como dato, el driver cambiará según el kernel de nuestra máquina | Lo descrito en su descripción |
 | `docker images`  | Muestra las imagenes disponibles en nuestro sistema y su versión  | Pueden haber imagenes que se refieran a si mismas, por ejemplo, latest y otra que contenga el número de la última versión | Lo descrito en su descripción |
 | `docker network ls`  | Para ver las redes que nos ofrece docker  |  | Lo descrito en su descripción |
 | `ifconfig docker0`  | Para ver la interfaz de red que crea docker al instalarse  |  | Lo descrito en su descripción |
 | `docker network create --driver (tipo) (nombre)`  | Para crear una nueva red de docker | Esto también creará una interfaz de red nueva  | `docker network create --driver bridge redtest` creará una red llamada "redtest" en puente |
-| `docker network ls`  | Para ver las redes que nos ofrece docker  |  | Lo descrito en su descripción |
+| `docker run (imagen)`  | Para ejecutar una imagen previamente descargada | Debemos agregar el parámetro `-ti` para que haga una llamada interactiva y no se cierre apenas la iniciemos, también debemos agregar el parámetro `--rm` para que se borre una vez se termine de ejecutar | `docker run ubuntu` ejecuta la imagen de Ubuntu |
+| `docker ps`  | Muestra las imagenes que se están ejecutando  | | Lo descrito en su descripción |
