@@ -8,7 +8,7 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `-l`  | Cambia la forma en que se imprimen ciertos comandos a ser una lista  | Por si solo no es un comando | `ls -l` muestra los directorios en forma de lista|
 | `sudo`  | Este comando nos servirá para correr cualquier comando que necesite permisos de administrador como si lo fueramos  | | `sudo reboot` reinicia el sistema|
 | `reboot`  | Reinicia el sistema operativo  | | El mismo ejemplo del comando anterior |
-| `ps -aux`  | Muestra los procesos del usuario en cuestión  | `(pipe) grep (proceso a buscar)` agregado al comando busca el proceso en cuestión  | Lo descrito en su descripción |
+| `ps -aux`  | Muestra los procesos del usuario en cuestión  | &#124; grep (proceso a buscar) agregado al comando busca el proceso en cuestión  | Lo descrito en su descripción |
 | `ps -e`  | Muestra los procesos del sistema operativo en su totalidad  |   | Lo descrito en su descripción |
 | `man (cualquier comando)`  | Muestra el manual del comando especificado  |   | `man ps` muestra el manual de comandos de procesos |
 | `top`  | Muestra los procesos como si se tratara del task manager  |   | Lo descrito en su descripción |
@@ -36,7 +36,7 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `> (nombre de un archivo de texto)`  | Esto guarda los resultados de un comando en un archivo de texto  | Por si solo no es un comando | `history > Test.txt` guardará el historial de comandos en el archivo "Test.txt" |
 | `head -n (n de líneas a ver) (archivo a ver)`  | Este comando sirve para ver las primeras líneas de un archivo de texto sin abrirlo del todo  | | `head -n 2 Test.txt` mostrará las primeras dos líneas de texto del archivo "Test.txt" |
 | `tail -n (n de líneas a ver) (archivo a ver)`  | Este comando sirve para ver las últimas líneas de un archivo de texto sin abrirlo del todo  | | `tail -n 2 Test.txt` mostrará las últimas dos líneas de texto del archivo "Test.txt" |
-| `more` | Concatenado con algún archivo nos permite verlo poco a poco  | Por si solo no es un comando, para salir de esta vista se presiona "q" | `cat Test.txt (pipe) more` nos permitirá ver el archivo "Text.txt" poco a poco |
+| `more` | Concatenado con algún archivo nos permite verlo poco a poco  | Por si solo no es un comando, para salir de esta vista se presiona "q" | cat Test.txt &#124; more nos permitirá ver el archivo "Text.txt" poco a poco |
 | `cp (archivo a copiar) (donde queremos copiarlo)`  | Para copiar un archivo a otra carpeta | | `cp Test.txt Escritorio/` copiará el archivo Test.txt al escritorio |
 | `mv (archivo a copiar) (donde queremos copiarlo)`  | Para mover un archivo a otra carpeta  | Si existe un archivo igual en la carpeta destino lo sobrescribirá | `mv Test.txt Escritorio/` moverá el archivo Test.txt al escritorio |
 | `rm (archivo a borrar)` | Para borrar archivos  | Agregar -R al final si se trata de un directorio, se puede agregar una f al lado para forzar su eliminación | `rm Test.txt` borrará el archivo "Test.txt" si está en el mismo directorio |
