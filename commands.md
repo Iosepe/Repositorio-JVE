@@ -97,3 +97,18 @@ En caso de no requerir algún parámetro se puede dejar con un asterisco<br />
 ### Ejemplo de crontab:<br />
 `00 19 * * * root echo Hola Mundo`<br />
 Esto ejecutará como root el comando echo todos los días a las 7 de la tarde
+
+
+# Docker
+En esta tabla se presentarán comandos útiles de Docker
+
+| Comando | ¿Qué hace? | Notas | Ejemplo |
+| :---: | :---: | :---: | :---: |
+| `docker pull (imagen)`  | Para descargar una imagen disponible en docker  | Si ponemos dos puntos después del nombre de la imagen, podremos escoger la versión que queremos descargar | `docker pull nginx` descarga la última imagen de nginx disponible |
+| `docker ps -a`  | Para ver los contenedores que tenemos disponibles  |  | Lo descrito en su descripción |
+| `docker history (contenedor) `  | Para ver los cambios y capas de un contenedor |  | `docker history nginx` mostrará los cambios y capas de nginx  |
+| `docker info`  | Mostrará información de nuestro docker  | Como dato, el driver cambiará según el kernel de nuestra máquina | Lo descrito en su descripción |
+| `docker images`  | Muestra las imagenes disponibles en nuestro sistema y su versión  | Pueden haber imagenes que se refieran a si mismas, por ejemplo, latest y otra que contenga el número de la última versión | Lo descrito en su descripción |
+| `docker network ls`  | Para ver las redes que nos ofrece docker  |  | Lo descrito en su descripción |
+| `ifconfig docker0`  | Para ver la interfaz de red que crea docker al instalarse  |  | Lo descrito en su descripción |
+| `docker network create --driver (tipo) (nombre)`  | Para crear una nueva red de docker |  | `docker network create --driver bridge redtest` creará una red llamada "redtest" en puente |
