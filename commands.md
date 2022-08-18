@@ -58,3 +58,5 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `mount` | Para montar dispositivos en el sistema de archivos |   | El ejemplo de arriba muestra una parte |
 | `Gparted` | Para administrar particiones |   | `sudo apt install gparted` para instalarlo |
 | `gnome-disk-utility` | Muestra información sobre el disco |   | `sudo apt install gnome-disk-utility` para instalarlo |
+| `pacman` | Gestor de paquetes de ArchLinux, nos permitirá instalar y gestionar paquetes |   | `sudo pacman -S yay` instala el repositorio AUR |
+| `systemctl` | Es la herramienta principal para controlar el sistema y sus servicios  | Dependiendo de la orden que le demos, los servicios harán diferentes cosas | `sudo systemctl start (servicio)` sirve para iniciar un servicio, `sudo systemctl stop (servicio)` sirve para detener un servicio, `sudo systemctl restart (servicio)` sirve para reiniciar un servicio, `sudo systemctl enable (servicio)` sirve para iniciar un servicio en el arranque, `sudo systemctl disable (servicio)` sirve para revertir lo anterior y `sudo systemctl status (servicio)` sirve para ver el estado de un servicio |
