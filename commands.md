@@ -69,3 +69,7 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `unlink (ruta del enlace)` | Sirve para eliminar un enlace duro o suave |  | `unlink /home/Test2` eliminará el enlace creado en Test2 |
 
 # Scripts
+
+Para crear scripts primeramente deberemos crear un archivo con la extensión `.sh` y agregar la siguiente línea de texto al puro inicio:
+`#!/bin/bash`
+Luego de esto podremos ir agregando comandos por línea, y estos se ejecutarán en ese orden
