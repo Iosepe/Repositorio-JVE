@@ -104,7 +104,7 @@ Esto ejecutará como root el comando echo todos los días a las 7 de la tarde
 Para instalar Docker se deben seguir estos pasos a continuación:<br />
 
 Debemos ingresar primeramente este comando de instalación<br />
-`sudo apt-get install \<br /> ca-certificates\<br /> curl \<br /> gnupg \<br /> lsb-release`
+`sudo apt-get install \ <br /> ca-certificates \ <br /> curl \ <br /> gnupg \ <br /> lsb-release`
 
 En esta tabla se presentarán comandos útiles de Docker
 
