@@ -8,7 +8,7 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `-l`  | Cambia la forma en que se imprimen ciertos comandos a ser una lista  | Por si solo no es un comando | `ls -l` muestra los directorios en forma de lista|
 | `sudo`  | Este comando nos servirá para correr cualquier comando que necesite permisos de administrador como si lo fueramos  | | `sudo reboot` reinicia el sistema|
 | `reboot`  | Reinicia el sistema operativo  | | El mismo ejemplo del comando anterior |
-| `grep`  | Busca un patrón que definamos e imprime las líneas solicitadas  | Por si solo no es un comando | `grep -r Log /home/` buscará el texto Log en home |
+| `grep (patrón) (archivo o directorio)`  | Busca un patrón que definamos e imprime las líneas solicitadas  |  | `grep -r Log /home/` buscará el texto Log en home |
 | `ps -aux`  | Muestra los procesos del usuario en cuestión  | &#124; grep (proceso a buscar) agregado al comando busca el proceso en cuestión  | Lo descrito en su descripción |
 | `ps -e`  | Muestra los procesos del sistema operativo en su totalidad  |   | Lo descrito en su descripción |
 | `man (cualquier comando)`  | Muestra el manual del comando especificado  |   | `man ps` muestra el manual de comandos de procesos |
@@ -62,6 +62,6 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `pacman` | Gestor de paquetes de ArchLinux, nos permitirá instalar y gestionar paquetes |   | `sudo pacman -S yay` instala el repositorio AUR |
 | `systemctl` | Es la herramienta principal para controlar el sistema y sus servicios  | Dependiendo de la orden que le demos, los servicios harán diferentes cosas | `sudo systemctl start (servicio)` sirve para iniciar un servicio,<br /> `sudo systemctl stop (servicio)` sirve para detener un servicio,<br /> `sudo systemctl restart (servicio)` sirve para reiniciar un servicio,<br /> `sudo systemctl enable (servicio)` sirve para iniciar un servicio en el arranque,<br /> `sudo systemctl disable (servicio)` sirve para revertir lo anterior,<br /> `sudo systemctl status (servicio)` sirve para ver el estado de un servicio |
 | `uname -a` | Para mostrar el kernel que utiliza el sistema operativo |   | Lo descrito en su descripción |
-| `useradd` | Para crear un nuevo usuario con sus respectivos directorios y funciones, cosa que lo hace distinto de adduser |   | `sudo useradd -m Test -G wheel -p 123` creará el usuario "Test" en el grupo wheel con la contraseña 123 |
-| `touch` | Para crear un archivo vacío |   | `sudo touch test` creará un archivo vacío llamado "test" en el directorio actual |
-| `swapon` | Para activar el swap | `swapoff` desactiva el swap  | Lo descrito en su descripción |
+| `useradd (parámetros)` | Para crear un nuevo usuario con sus respectivos directorios y funciones, cosa que lo hace distinto de adduser |   | `sudo useradd -m Test -G wheel -p 123` creará el usuario "Test" en el grupo wheel con la contraseña 123 |
+| `touch (archivo)` | Para crear un archivo vacío |   | `sudo touch test` creará un archivo vacío llamado "test" en el directorio actual |
+| `ln (ruta o nombre del archivo original) (ruta o nombre del enlace duro)` | Sirve para crear un enlace duro de un archivo o ruta |  | `ln /home/Test /home/Test2` creará un enlace duro de Test en Test2 |
