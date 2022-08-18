@@ -4,7 +4,9 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 
 | Comando | ¿Qué hace? | Notas | Ejemplo |
 | :---: | :---: | :---: | :---: |
-| `Pipe`  | Este símbolo llamado pipe sirve para concatenar dos comandos  | Por si solo no es un comando, este símbolo no se puede usar en esta tabla, por lo que no será visible | `ps -aux (pipe) grep "firefox"` busca en la lista de procesos alguno llamado Firefox|
+| `&#124;
+` | Este símbolo llamado pipe sirve para concatenar dos comandos  | Por si solo no es un comando | `ps -aux &#124;
+ grep "firefox"` busca en la lista de procesos alguno llamado Firefox|
 | `-l`  | Cambia la forma en que se imprimen ciertos comandos a ser una lista  | Por si solo no es un comando | `ls -l` muestra los directorios en forma de lista|
 | `sudo`  | Este comando nos servirá para correr cualquier comando que necesite permisos de administrador como si lo fueramos  | | `sudo reboot` reinicia el sistema|
 | `reboot`  | Reinicia el sistema operativo  | | El mismo ejemplo del comando anterior |
