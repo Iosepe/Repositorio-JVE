@@ -30,6 +30,7 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 | `clear`  | Limpia la terminal | | Lo descrito en su descripción |
 | `nano` | Para ver archivos de texto y editarlos  | Esto es un Notepad en la terminal, para seleccionar una opción, ver el menú de abajo y seleccionar una letra de este modo: Ctrl+Letra | Tenemos un archivo de texto llamado "Test.txt" en el directorio actual, con `nano Test.txt` podemos abrirlo y editarlo |
 | `cat (nombre del archivo)` | Para SOLO ver el contenido de un archivo de texto  | | `cat Test.txt` nos muestra el contenido del archivo "Test.txt" si se encuentra en el mismo directorio |
+| `echo`  | Imprime algo en la terminal | | `echo Hola Mundo` imprime "Hola Mundo" en la terminal |
 | `sl`  | Un pequeño trolleo por si escribes mal ls  | | Lo descrito en su descripción |
 | `cowsay`  | Hace que una vaca diga lo que se le escriba | Incluso se puede concatenar con pipe y hacer que muestre comandos enteros | `ps -aux (pipe) cowsay` muestra la lista de procesos en una vaca |
 | `telnet towel.blinkenlights.nl `  | Muestra el episodio 4 de Star Wars completo  | Prepara las palomitas | Lo descrito en su descripción |
@@ -71,5 +72,22 @@ En esta tabla se verán comandos que se usaron en el curso de Sistemas Operativo
 # Scripts
 
 Para crear scripts primeramente deberemos crear un archivo con la extensión `.sh` y agregar la siguiente línea de texto al puro inicio:
-`#!/bin/bash`
-Luego de esto podremos ir agregando comandos por línea, y estos se ejecutarán en ese orden
+`#!/bin/bash`<br />
+Luego de esto podremos ir agregando comandos por línea, y estos se ejecutarán en ese orden.<br />
+
+Para ejecutar un script, deberemos usar el siguiente comando:
+`cat (archivo del script)`<br />
+
+Para cambiar el crontab (que definirá la configuración de ejecución en el tiempo del script), deberemos ejecutar el siguiente comando:
+`crontab -e`<br />
+Esto abrirá un archivo de texto donde deberemos ingresar la siguiente configuración:
+`m h dom mon dow command`<br />
+
+m: Minutos
+h: Hora
+dom: Día del mes
+mon: Mes
+dow: Día de la semana
+command: Comando o ruta del script a ejecutar
+
+
