@@ -100,6 +100,12 @@ Esto ejecutará como root el comando echo todos los días a las 7 de la tarde
 
 
 # Docker
+
+Para instalar Docker se deben seguir estos pasos a continuación:<br />
+
+Debemos ingresar primeramente este comando de instalación<br />
+`sudo apt-get install \<br /> ca-certificates\<br /> curl \<br /> gnupg \<br /> lsb-release`
+
 En esta tabla se presentarán comandos útiles de Docker
 
 | Comando | ¿Qué hace? | Notas | Ejemplo |
@@ -111,4 +117,5 @@ En esta tabla se presentarán comandos útiles de Docker
 | `docker images`  | Muestra las imagenes disponibles en nuestro sistema y su versión  | Pueden haber imagenes que se refieran a si mismas, por ejemplo, latest y otra que contenga el número de la última versión | Lo descrito en su descripción |
 | `docker network ls`  | Para ver las redes que nos ofrece docker  |  | Lo descrito en su descripción |
 | `ifconfig docker0`  | Para ver la interfaz de red que crea docker al instalarse  |  | Lo descrito en su descripción |
-| `docker network create --driver (tipo) (nombre)`  | Para crear una nueva red de docker |  | `docker network create --driver bridge redtest` creará una red llamada "redtest" en puente |
+| `docker network create --driver (tipo) (nombre)`  | Para crear una nueva red de docker | Esto también creará una interfaz de red nueva  | `docker network create --driver bridge redtest` creará una red llamada "redtest" en puente |
+| `docker network ls`  | Para ver las redes que nos ofrece docker  |  | Lo descrito en su descripción |
