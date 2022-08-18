@@ -91,4 +91,8 @@ mon: Mes<br />
 dow: Día de la semana<br />
 command: Comando o ruta del script a ejecutar
 
+En caso de no requerir algún parámetro se puede dejar con un asterisco<br />
 
+Ejemplo de crontab:
+`00 19 * * * root echo Hola Mundo`<br />
+Esto ejecutará como root el comando echo todos los días a las 7 de la tarde
