@@ -144,7 +144,6 @@ En esta tabla se presentarán comandos útiles de Docker
 | `docker build -t (dockerfile)`  | Para probar un Dockerfile anteriormente construido  | Con `--no-cache=true` podremos rehacer la imagen desde 0 con los paquetes más actualizados | `docker build -t nginx:joseph .` probará el dockerfile especificado en la carpeta actual |
 | `docker search (nombre)`  | Buscará las imagenes especificadas en el repositorio de docker  |  | `docker search ubuntu` buscará las imagenes de Ubuntu |
 | `docker start (contenedor)`  | Para iniciar un contenedor |  | `docker start ubuntu` inicia el contenedor de Ubuntu |
-| `docker stop (contenedor)`  | Para detener un contenedor |  | `docker stop ubuntu` detiene el contenedor de Ubuntu |
 | `docker commit (contenedor) (cambios)`  | Para hacer commit a un contenedor |  | `docker commit c3f279d17e0a joseph/test` hace commit a la imagen seleccionada y será mostrado en las imagenes disponibles de la forma que fue configurado |
 | `docker push (usuario)/(imagen)`  | Para hacer un push a la cuenta de Dockerhub con una imagen |  | `docker push jvillaltae785/nginx` hace un push de la imagen de nginx a la cuenta especificada en Dockerhub |
 | `docker login -u (usuario)`  | Para iniciar sesión con el usuario de Dockerhub |  | `docker login -u jvillaltae785` inicia sesión en la cuenta especificada luego de ingresar el password cuando nos lo solicite |
@@ -153,15 +152,14 @@ En esta tabla se presentarán comandos útiles de Docker
 Esta herramienta nos ayudará a gestionar y trabajar con contenedores Docker de una manera más sencilla
 
 ### Instalación:<br />
-<br />
 Usamos el siguiente comando para obtener su imagen<br />
-`docker pull portainer/portainer-ce:latest`<br />
+`docker pull portainer/portainer-ce:latest` <br />
 <br />
 Creamos un volúmen donde se almacenarán sus datos de configuración<br />
-`docker volume create portainer_data`<br />
+`docker volume create portainer_data` <br />
 <br />
 Ejecutamos la aplicación con sus respectivos puertos expuestos<br />
-`docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest`<br />
+`docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest` <br />
 <br />
 Finalmente en el navegador entramos en la siguiente URL:<br />
-https://localhost:9443/#!/auth<br />
+https://localhost:9443/#!/auth <br />
