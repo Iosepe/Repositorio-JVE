@@ -122,6 +122,7 @@ Y finalmente ejecutamos la instalación:<br />
 
 No hay que olvidarse de iniciar el servicio:<br />
 `systemctl --user start docker-desktop`<br />
+<br />
 
 En esta tabla se presentarán comandos útiles de Docker
 
